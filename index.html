@@ -15,18 +15,37 @@
         <div class="hero-copy">
           <h1>My To Do List</h1>
           <p>Stay focused with a clean, modern task tracker built for today.</p>
+          <div class="hero-chips">
+            <span>Fast</span>
+            <span>Minimal</span>
+            <span>Responsive</span>
+          </div>
         </div>
       </header>
 
-      <main class="container">
-        <div class="input-container">
-          <input type="text" id="taskInput" placeholder="Add a new task..." aria-label="New task" />
-          <button id="addTaskButton" type="button">Add Task</button>
+        <main class="container">
+        <div class="controls">
+          <form class="input-container" id="taskForm">
+            <input
+              type="text"
+              id="taskInput"
+              placeholder="Add a new task..."
+              aria-label="New task"
+              required
+            />
+            <button id="addTaskButton" type="submit">Add Task</button>
+          </form>
+
+          <div class="stats-row">
+            <div class="stats" id="stats">0 tasks · 0 completed</div>
+            <button id="completeAllButton" type="button" class="secondary-button">Complete All</button>
+            <button id="clearCompletedButton" type="button" class="secondary-button">Clear Completed</button>
+          </div>
         </div>
 
         <ul class="todolist" id="todoList"></ul>
 
-        <div class="note">Tip: Click a task to mark it complete. Use the trash icon to remove it.</div>
+        <div class="note">Tip: Tap a task or press Complete to mark it done. Use the trash icon to remove it.</div>
       </main>
     </div>
 
