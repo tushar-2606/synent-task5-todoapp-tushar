@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Modern To Do List</title>
   </head>
@@ -14,35 +14,37 @@
       <header class="hero">
         <div class="hero-copy">
           <h1>My To Do List</h1>
-          <p>Stay focused with a clean, modern task tracker built for today.</p>
-        
+          <p>Focus on what matters — simple, fast, and beautiful.</p>
         </div>
       </header>
 
-        <main class="container">
+      <main class="container">
         <div class="controls">
           <form class="input-container" id="taskForm">
             <input
               type="text"
               id="taskInput"
-              placeholder="Add a new task..."
+              placeholder="What do you want to accomplish today?"
               aria-label="New task"
               required
             />
-            <button id="addTaskButton" type="submit">Add Task</button>
+            <button id="addTaskButton" type="submit" class="primary">Add</button>
           </form>
 
           <div class="stats-row">
             <div class="stats" id="stats">0 tasks · 0 completed</div>
-            <button id="completeAllButton" type="button" class="secondary-button">Complete All</button>
-            <button id="clearCompletedButton" type="button" class="secondary-button">Clear Completed</button>
+            <div class="controls-actions">
+              <button id="completeAllButton" type="button" class="secondary-button">Complete All</button>
+              <button id="clearCompletedButton" type="button" class="secondary-button">Clear Completed</button>
+            </div>
           </div>
         </div>
 
         <ul class="todolist" id="todoList"></ul>
 
-        <div class="note">Tip: Tap a task or press Complete to mark it done. Use the trash icon to remove it.</div>
+        <div class="note">Tip: Use the buttons to manage tasks. Click the task text or the Complete button to toggle completion.</div>
       </main>
+
     </div>
 
     <script src="index.js"></script>
