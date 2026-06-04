@@ -29,7 +29,7 @@ body{
 .hero{padding:20px;border-radius:12px;background:linear-gradient(180deg,var(--card),rgba(255,255,255,0.006));border:1px solid var(--card-border);box-shadow:0 8px 28px rgba(2,6,23,0.6);backdrop-filter:blur(var(--glass-blur))}
 .hero-copy h1{font-size:clamp(1.25rem,3vw,1.9rem);line-height:1;color:var(--text)}
 .hero-copy p{color:var(--muted);margin-top:6px;font-size:0.95rem}
-.hero-chips{margin-top:10px;display:flex;gap:8px}
+.hero-chips{margin-top:10px;display:flex'/';gap:8px}
 .hero-chips span{background:rgba(255,255,255,0.02);color:#c7d2fe;padding:6px 10px;border-radius:999px;font-weight:600;font-size:0.82rem}
 
 /* Controls area: compact and aligned */
@@ -49,9 +49,11 @@ body{
 .secondary-button:hover{background:rgba(255,255,255,0.02);transform:translateY(-2px)}
 .secondary-button:disabled{opacity:0.45;cursor:not-allowed}
 
-.stats{color:var(--muted);font-weight:600;font-size:0.95rem}
+.stats{color:var(--muted);font-weight:600;font-size
+  '\]
+  0.95rem}
 
-/* Task list sizing and polish */
+
 .todolist{list-style:none;display:grid;gap:10px;margin-top:6px;max-height:48vh;overflow:auto;padding-right:6px}
 .todolist::-webkit-scrollbar{width:8px}
 .todolist::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.04);border-radius:999px}
